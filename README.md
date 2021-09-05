@@ -14,7 +14,6 @@ without Span Representations"](https://www.semanticscholar.org/paper/Coreference
   * [Prepare the dataset](#prepare-the-dataset)
 - [Evaluation](#evaluation)
 - [Training](#training)
-- [Cite](#cite)
 
 ## Set up
 
@@ -52,10 +51,9 @@ Credit: This script was taken from the [e2e-coref](https://github.com/kentonl/e2
 
 ## Evaluation
 Download our trained model:
-####TODO: curl link
  ```
 export MODEL_DIR=<model_dir>
-curl -L  > temp_model.zip
+gdown --id 1uPzu-wAnMoO84tK_urRLxO7zN6eRQ2fy --output temp_model.zip
 unzip temp_model.zip -d $MODEL_DIR
 rm -rf temp_model.zip
 ```
