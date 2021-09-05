@@ -33,8 +33,22 @@ Install the requirements:
 cd s2e-coref
 pip install -r requirements.txt
 ```
-To enable apex mixed precision, and to download and prepare the dataset, 
-please see the instructions [here](https://githubcom/yuvalkirstain/s2e-coref#download-the-official-evaluation-script).
+#### Download the official evaluation script
+Run (from inside the repo):
+ 
+```
+git clone https://github.com/conll/reference-coreference-scorers.git
+```
+
+#### Prepare the dataset
+
+This repo assumes access to the [OntoNotes 5.0](https://catalog.ldc.upenn.edu/LDC2013T19) corpus.
+Convert the original dataset into jsonlines format using:
+```
+export DATA_DIR=<data_dir>
+python minimize.py $DATA_DIR
+``` 
+Credit: This script was taken from the [e2e-coref](https://github.com/kentonl/e2e-coref/) repo.
 
 ## Evaluation
 Download our trained model:
