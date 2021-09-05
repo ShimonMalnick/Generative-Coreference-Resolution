@@ -68,7 +68,6 @@ export SPLIT_FOR_EVAL=<dev or test>
 python run_config.py \
             --model_type t5-base \
             --split_for_eval test \
-            --lr 1e-4 \
             --epochs 1 \
             --model_name_or_path $MODEL_DIR \
             --sent_num 10 \
@@ -87,7 +86,6 @@ export SPLIT_FOR_EVAL=<dev or test>
 python run_config.py \
             --model_type t5-base \
             --split_for_eval test \
-            --lr 1e-4 \
             --epochs <num of epochs> \
             --model_name_or_path $MODEL_DIR \
             --sent_num 10 \
