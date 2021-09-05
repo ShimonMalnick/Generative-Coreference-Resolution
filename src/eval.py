@@ -56,14 +56,14 @@ class Evaluator:
                 loss = outputs[0]  # model outputs are always tuple in transformers (see doc)
                 loss_dict = {}
                 loss_dict.update({f"{type}_loss": loss})
-            # gen_size = labels.size()[1] + 1
+            gen_size = labels.size()[1] + 1
             if type == "Test":
                 gen_size = max(eval_dataset.labels_lengths) + 1
                 # beam search 1 for greedy search.
                 model_gen_out = model.generate(input_ids=input_ids,
                                                attention_mask=attention_mask,
                                                num_beams=self.args.num_beams,
-                                               max_length=1023)
+                                               max_length=gen_size)
                 print("input_ids")
                 print(input_ids.size())
                 print("attention_mask")
