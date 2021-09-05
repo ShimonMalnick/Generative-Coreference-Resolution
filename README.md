@@ -1,7 +1,7 @@
 # Generative Coreference Resolution
 
 This repository contains the code implementation from our project 
-["Generative Coreference Resolution"](https://drive.google.com/file/d/1bBudCr0Ndlaq4PDmq2aaTmLmhH2V3L4w/view?usp=sharing).
+["Generative Coreference Resolution"](https://drive.google.com/file/d/1UZ4IZqfQ-GxO6Hk_L5fLMc2BouO2079s/view?usp=sharing).
 
 Our code is based upon the work of the paper ["Coreference Resolution 
 without Span Representations"](https://www.semanticscholar.org/paper/Coreference-Resolution-without-Span-Representations-Kirstain-Ram/3029263ca51e6c2907f9f99277083cf6afb1adb7)
